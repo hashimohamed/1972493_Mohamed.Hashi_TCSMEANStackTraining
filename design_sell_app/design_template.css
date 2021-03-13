@@ -1,0 +1,22 @@
+.class {
+	font-family: "Times New Roman", Times, serif;
+	background-color: #1d2027;
+	color: white;
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+#firstP {
+	font-size: 35px;
+	margin: 50px;
+	font-style: italic;
+}
+img {
+	padding: 50px;
+	border: 2px solid #3d373d;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
