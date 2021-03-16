@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap');
+body{
+	font-family: 'Cinzel', serif;
+
+}
+h1 {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 40px;
+}
+
+.wrapper_fiance {
+	font-size: 30px;
+	border: 1px solid rgb(240, 81, 81);
+	background-color: beige;
+	text-align: center;
+	height: 400px;
+	width: 30%;
+	margin-left: 500px;
+	margin-top: 80px;
+	padding: 60px;
+}
+
+table {
+	font-size: 20px;
+	background: rgb(165, 118, 118);
+	color: #fff;
+	padding: .5em;
+    text-align: center;
+}
+input{
+    float: left;
+    width: 70px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: chartreuse;
+}
+span {
+    color:blue;
+}

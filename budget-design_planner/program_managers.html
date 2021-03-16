@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Managers Page</title>
+    <link rel="stylesheet" href="program_managers.css">
+    <script src = "program_managers.js"></script>
+</head>
+
+<body>
+<h1>Program Managers</h1>
+<div  id ="wrapper_managers">
+    <span>Add New Budget</span></br></br>
+    <form action="fiance_team.html"post = "POST">
+        <label>Client Name: </label>
+        <input type="text" id="clientName"/><br/>
+        <label>Project Name: </label>
+        <input type="text" id="projectName"/><br/>
+        <label>Budget Name: </label>
+        <input type="number" id="budgetName"/><br/>
+        <input type="button" value="Add" id ="submit-value" name ="submit_n" onclick="onFormSubmitFinance()"/>
+        <input type="reset" value = "Clear" id ="reset-value" name ="submit_n"/> 
+        <input type="button" value="Back" onclick="window.history.back()" /> 
+        <hr/>
+    </form>
+</div>
+    
+</body>
+</html>

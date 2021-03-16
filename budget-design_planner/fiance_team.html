@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Teams Page</title>
+    <link rel="stylesheet" href="finance_team.css">
+    <script src = "program_managers.js"></script>
+    <script src = "finance_team.js"></script>
+</head>
+<body>
+<h1>Finance Teams</h1>
+<div  class ="wrapper_fiance">
+    <span>Annual Budget</span>
+<hr/>
+<table id="financeList">
+    <br> <br> 
+   <thead>
+       <tr>
+           <th>Client Name</th>
+           <th>Project Name</th>
+           <th>Budget Name</th>
+       </tr>
+   </thead> 
+   <tbody>
+   </tbody>
+</table>
+<input type="button" value="Back" onclick="window.history.back()" /> 
+</div>
+<script>
+    window.onload=retrieveFromSessionFinance();
+    
+</script>
+    
+</body>
+</html>
