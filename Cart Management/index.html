@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Management</title>
+    <script> var exports = {}; </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src = "shoppingCart.js"></script>
+</head>
+<body>
+  <h2>Shopping Cart</h2>
+ <hr>
+  <fieldset style="width:200px">
+  <i class="fa fa-shopping-cart"> Cart Size:
+
+    <script>
+    var sessionCart = retriveProduct();
+    if (sessionCart !=null)
+    document.write(sessionCart.length);
+    </script>
+  </i>
+<a href="shoppingCart.html">Checkout</a>
+<div class="item1">
+  <p>Orange</p>
+  <p>$19.99</p>
+  <input type = "hidden" id = "productName" value ="Orange"/>
+  <input type = "hidden" id = "productPrice" value ="19.99"/>
+
+  <button class="button" id="button" onclick="add('productName', 'productPrice'); location.reload()">Add to Cart</button>
+</div>
+</fieldset>
+<fieldset style="width:200px">
+<div id="item2">
+  <p>Bannana</p>
+  <p>$30.99</p>
+  <input type = "hidden" id = "productName2" value ="Bannana"/>
+  <input type = "hidden" id = "productPrice2" value ="30.99"/>
+  <button class="button" id="button" onclick="add('productName2', 'productPrice2');location.reload()">Add to Cart</button>
+</div>
+</fieldset>
+<fieldset style="width:200px">
+<div id="item3">
+  <p>Apple</p>
+  <p>$9.99</p>
+  <input type = "hidden" id = "productName3" value ="Apple"/>
+  <input type = "hidden" id = "productPrice3" value ="9.99"/>
+  <button class="button" id="button" onclick="add('productName3', 'productPrice3');location.reload()">Add to Cart</button>
+</div>
+</fieldset>
+<fieldset style="width:200px">
+  <div id="item4">
+    <p>Papaya</p>
+    <p>$9.99</p>
+    <input type = "hidden" id = "productName4" value ="Papaya"/>
+    <input type = "hidden" id = "productPrice4" value ="9.99"/>
+    <button class="button" id="button" onclick="add('productName4', 'productPrice4');location.reload()">Add to Cart</button>
+  </div>
+  </fieldset>
+  <fieldset style="width:200px">
+    <div id="item5">
+      <p>Pie</p>
+      <p>$8.99</p>
+      <input type = "hidden" id = "productName5" value ="Pie"/>
+      <input type = "hidden" id = "productPrice5" value ="8.99"/>
+      <button class="button" id="button" onclick="add('productName5', 'productPrice5');location.reload()">Add to Cart</button>
+    </div>
+    </fieldset>
+</body>
+</html>

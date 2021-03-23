@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script> var exports = {}; </script>
+    <link rel="stylesheet" href="shoppingCart.css">
+    <script src = "shoppingCart.js"></script>
+</head>
+<body>
+<div  class ="wrapper_fiance">
+  <h1>Shopping Checkout</h1>
+<hr/>
+<table id="financeList">
+   <thead>
+       <tr>
+           <th>Item Name</th>
+           <th>Price</th>
+       </tr>
+   </thead> 
+   
+   <tbody>
+
+<script>
+var sessionCart = retriveProduct();
+var totalPrice = 0;
+if (sessionCart !=null) {
+for (var index = 0; index< sessionCart.length; index++) {
+var test2 = sessionCart[index];
+document.write('<TR>');
+document.write('<TD>' + test2.itemName + '</TD>');
+document.write('<TD>' + test2.itemPrice + '</TD>');
+document.write('</TR>');
+totalPrice = totalPrice +  parseInt(test2.itemPrice);
+}
+document.write('<TR>');
+document.write('<TD>Total: </TD>');
+document.write('<TD>' + totalPrice + '</TD>');
+document.write('</TR>');
+
+}
+
+</script>
+</tbody>
+</table>
+<input type="button" value="Back" onclick="window.history.back()" />  
+</div>
+<script>
+  window.onload=retriveProduct();
+</script>
+    
+</body>
+</html>
