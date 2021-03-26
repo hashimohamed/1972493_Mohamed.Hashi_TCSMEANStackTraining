@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+#display{
+    display: inline-flex;
+    float: right;
+}
+footer{
+    margin-bottom: 5px;
+}
+span{
+    color:royalblue;
+    background-color: rgb(247, 242, 239);
+}

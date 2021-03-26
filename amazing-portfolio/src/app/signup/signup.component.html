@@ -1,0 +1,30 @@
+<div>
+    
+    <div class = "contain">
+        <br>
+        <h2>Registration Form</h2>
+        <br>
+    <form [formGroup]="signupRef" (ngSubmit)="checkUserRegistration()">
+        <div class="form-group">
+            <label>First Name:</label>
+            <input type="text" class="form-control" formControlName="fname"> <br>
+            <label>Last Name:</label>
+            <input type="text" class="form-control" formControlName="lname"><br>
+        </div>
+    
+
+        <label>Username:</label>
+        <input type="text" class="form-control" formControlName="userForm"> <br>
+        <label>Password:</label>
+        <input type="password" class="form-control" formControlName="passForm"><br>
+        <div id = "RGbutton">
+        <input type="submit"  value="Register"/> <br>
+        <input type="reset"  value="Reset"/>
+        </div>
+        <div class="right">
+            <a class="nav-item nav-link" routerLink="/login">Sigin</a>
+        </div>
+    </form>
+    {{msgReg}}
+    </div>
+</div>

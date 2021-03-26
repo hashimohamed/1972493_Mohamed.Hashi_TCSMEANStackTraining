@@ -1,0 +1,27 @@
+.portfolio-container {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  margin-inline: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(247, 244, 240);
+  border-radius: 4px;
+  margin-top: 80px;
+  box-shadow: 0px 0px 1px 1px rgb(207, 202, 202);
+}
+input{
+  width: 250px;
+}
+#RGbutton {
+  background-color: rgb(0, 4, 255);
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
