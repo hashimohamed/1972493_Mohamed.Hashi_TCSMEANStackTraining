@@ -1,0 +1,21 @@
+li >input {
+    vertical-align: baseline;
+    margin-left: 20px;
+    float:left;
+}
+
+#cMe{
+    text-align: center;
+font-size: 30px;
+margin-top: -60px;
+background-color: rgb(73, 73, 82);
+color: cornsilk;
+}
+
+#passGrade{
+    background-color: rgb(20, 220, 110);
+}
+
+#failGrade{
+    background-color: rgb(220, 20, 20);
+}

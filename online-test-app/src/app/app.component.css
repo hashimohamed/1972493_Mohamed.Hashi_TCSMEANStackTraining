@@ -1,0 +1,15 @@
+#blocktext {
+	font-size: 20px;
+    /* float: center; */
+	width: 1000px;
+	height: auto;
+	padding: 20px;
+	border: 1px solid red;
+}
+
+a {
+	text-decoration: none;
+}
+#outerDiv {
+	margin-left: 200px;
+}

@@ -1,0 +1,212 @@
+[
+  {
+     "question":"Which of the following is correct about TypeScript?",
+     "answer":[
+        {
+           "option":"Angular is based on TypeScript",
+           "correct":false
+        },
+        {
+           "option":"This is a superset of JavaScript",
+           "correct":false
+        },
+        {
+           "option":"TypeScript is maintained by Microsoft",
+           "correct":false
+        },
+        {
+           "option":"All of the above",
+           "correct":true
+        }
+     ]
+  },
+  {
+     "question":"Which of the following is not a hook application life cycle?",
+     "answer":[
+        {
+           "option":"ngOnChanges",
+           "correct":false
+        },
+        {
+           "option":"ngViewStart",
+           "correct":true
+        },
+        {
+           "option":"ngOnInit",
+           "correct":false
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Outer is part of which of the following module?",
+     "answer":[
+        {
+           "option":"@angular/core",
+           "correct":false
+        },
+        {
+           "option":"@angular/router",
+           "correct":true
+        },
+        {
+           "option":"@angular/routing",
+           "correct":false
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Which file is responsible for startup of angular 2 project?",
+     "answer":[
+        {
+           "option":"main.ts",
+           "correct":true
+        },
+        {
+           "option":"index.js",
+           "correct":false
+        },
+        {
+           "option":"app.ts",
+           "correct":false
+        },
+        {
+           "option":"angular.cli.json",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Which directive display view for various routes??",
+     "answer":[
+        {
+           "option":"ng-view",
+           "correct":true
+        },
+        {
+           "option":"ng-model",
+           "correct":false
+        },
+        {
+           "option":"ng-display",
+           "correct":false
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Which of the following is an in-built service in angular JS?",
+     "answer":[
+        {
+           "option":"$http",
+           "correct":false
+        },
+        {
+           "option":"$route",
+           "correct":false
+        },
+        {
+           "option":"$windows",
+           "correct":false
+        },
+        {
+           "option":"All of the above",
+           "correct":true
+        }
+     ]
+  },
+  {
+     "question":"By default, How ng-model watches the directive?",
+     "answer":[
+        {
+           "option":"By value",
+           "correct":false
+        },
+        {
+           "option":"Both value and reference",
+           "correct":false
+        },
+        {
+           "option":"By reference",
+           "correct":true
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Which service is used to communicate with remote server?",
+     "answer":[
+        {
+           "option":"$interval",
+           "correct":false
+        },
+        {
+           "option":"$http",
+           "correct":true
+        },
+        {
+           "option":"$animate",
+           "correct":false
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Which directive is used to hide a given control?",
+     "answer":[
+        {
+           "option":"ng- disbaled",
+           "correct":false
+        },
+        {
+           "option":"ng- cover",
+           "correct":false
+        },
+        {
+           "option":"ng- hide",
+           "correct":true
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  },
+  {
+     "question":"Which function is used to create a module?",
+     "answer":[
+        {
+           "option":"add.module()",
+           "correct":false
+        },
+        {
+           "option":"angular.module()",
+           "correct":true
+        },
+        {
+           "option":"angular.CreateModule()",
+           "correct":false
+        },
+        {
+           "option":"None of the above",
+           "correct":false
+        }
+     ]
+  }
+]
