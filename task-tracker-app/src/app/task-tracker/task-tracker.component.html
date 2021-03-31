@@ -1,0 +1,55 @@
+
+<div>
+<hr>
+<div id="container">
+    <h3>Add Task Tracker</h3>
+        <form #taskRef="ngForm" (ngSubmit) = "storeTaskData(taskRef.value)">
+            <mat-form-field>
+                <mat-label>Id</mat-label>
+                <input matInput type = "text" name="id" ngModel/> 
+            </mat-form-field>
+            &nbsp;
+            <br>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput type = "text" name="name" ngModel/> 
+            </mat-form-field>
+            &nbsp;
+            <br>
+            <mat-form-field>
+                <mat-label>Task</mat-label>
+                <input matInput type = "text" name="task" ngModel/> 
+            </mat-form-field>
+            &nbsp;
+            <br>
+            <mat-form-field>
+                <mat-label>Deadline</mat-label>
+                <input matInput type = "date" name="date" ngModel/> 
+            </mat-form-field>
+            <br>
+            <button class= "myButton" mat-stroked-button color="primary" type="submit">Store</button>
+        </form>
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="Id">
+              <th mat-header-cell *matHeaderCellDef> Id </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="task">
+              <th mat-header-cell *matHeaderCellDef> Task </th>
+              <td mat-cell *matCellDef="let element"> {{element.task}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Dateline">
+              <th mat-header-cell *matHeaderCellDef> Deadline </th>
+              <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            
+        </table>
+</div>
+</div>  

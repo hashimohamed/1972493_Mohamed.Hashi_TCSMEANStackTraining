@@ -1,0 +1,58 @@
+{
+  "task": [
+    {
+      "id": 1,
+      "name": "Project",
+      "task": "Install NodeJS",
+      "date": "2021-03-19"
+    },
+    {
+      "id": "2",
+      "name": "Angular UI",
+      "task": "Develop Front End",
+      "date": "2021-04-02"
+    },
+    {
+      "id": "3",
+      "name": "Bootstrap ",
+      "task": "Add styles to Project",
+      "date": "2021-04-01"
+    },
+    {
+      "id": "4",
+      "name": "Test Proj",
+      "task": "Complete Phase2",
+      "date": "2021-04-02"
+    },
+    {
+      "id": "5",
+      "name": "AWS Certification ",
+      "task": "Schedule Exam",
+      "date": "2021-04-06"
+    },
+    {
+      "id": "6",
+      "name": "Project X",
+      "task": "Complete Phase1",
+      "date": "2021-04-09"
+    },
+    {
+      "id": "7",
+      "name": "Bootstrap II",
+      "task": "Finish 2 days",
+      "date": "2021-04-10"
+    },
+    {
+      "id": "8",
+      "name": "Academic Record",
+      "task": "Study",
+      "date": "2021-03-18"
+    },
+    {
+      "id": "9",
+      "name": "Post Graduate",
+      "task": "Thirty Hours",
+      "date": "2021-04-06"
+    }
+  ]
+}

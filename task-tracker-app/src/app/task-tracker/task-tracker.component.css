@@ -1,0 +1,17 @@
+#container {
+border: 1px red solid;
+margin-left: 400px;
+width: 800px;
+height: 1050px;
+margin-top: 50px;
+}
+table{
+    width: 800px;
+
+}
+.myButton{
+    width: 80px!important;
+    min-width: unset!important;
+    height: 40px;
+    margin-left: 0px;
+}
