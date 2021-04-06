@@ -1,0 +1,23 @@
+[
+  {
+    "first name": "Mohamed",
+    "last name": "Hashi",
+    "gender": "M",
+    "email": "mh@gmail.com",
+    "datetime": "Monday, April 5th, 2021, 6:59:22 PM CDT"
+  },
+  {
+    "first name": "Ali",
+    "last name": "Ahmaed",
+    "gender": "M",
+    "email": "aa@outlook.com",
+    "datetime": "Monday, April 5th, 2021, 7:00:26 PM CDT"
+  },
+  {
+    "first name": "Samira",
+    "last name": "Omar",
+    "gender": "F",
+    "email": "so@gmail.com",
+    "datetime": "Monday, April 5th, 2021, 7:02:05 PM CDT"
+  }
+]
