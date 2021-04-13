@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting with Socket IO</title>
+<style>
+
+#container {
+  border: 1px solid rgb(202, 203, 216);
+  width: 300px;
+  height: 220px;
+  margin: auto;
+  background-color: rgb(250, 246, 241);
+}
+h3 {
+  text-align: center;
+}
+#textArea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+#s_input {
+  margin-left: 70px;
+  width: 162px;
+  background-color: rgb(64, 62, 177);
+}
+#name {
+  width: 150px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border-color: rgb(242, 245, 244);
+}
+
+input[type="button"] {
+  padding: 5px 15px;
+  background: rgb(23, 211, 86);
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+</style>
+    <!-- connected socket library file -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+    var socket = io();      // connection happen with server program. 
+  
+    function dispaly() {
+        let name_= document.getElementById("name").value;
+        let text_= document.getElementById("textArea").value;
+        socket.emit("chat", `Hello: ${name_}`);
+        socket.emit("chat", `Message: ${text_}`);
+    }
+    </script>
+</head>
+<body>
+    <h3>Chating with Socket IO</h3>
+    <hr>
+    <div id="container">
+        <form><br>
+            <label>Name:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" name="name"><br><br>
+            <label>Messages:</label> 
+            <textarea id="textArea" name="textArea" rows="4" cols="22">
+            </textarea> </br>
+           <input id = "s_input" type="button" value="Submit" onclick="dispaly()"/>
+        </form>
+    </div>
+</body>
+
+</html>
