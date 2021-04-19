@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting with Socket IO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- connected socket library file -->
+    <script src="/socket.io/socket.io.js"></script>
+<style>
+#container {
+width: 400px;
+height: 400px;
+border: 1px solid rgb(151, 194, 250);
+margin: auto;
+padding: 10px;
+font-size: 30px;
+background-color: #f9fafa;
+border-radius: 25px;
+}
+
+h4 {
+  text-align: center;
+  }
+
+label {
+  font-size: 20px;
+  }
+
+</style>
+
+</head>
+<body>
+    <h4>Chatlog Socket IO MongoDB</h4>
+    <hr>
+    <div id="container">
+  		<form action="/messages" method="POST">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="name" class="form-control" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label>Messages</label>
+          <textarea class="form-control" name = "message" id="message" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="reset" class="btn btn-success">Reset</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
