@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!-- <script src="/express_mongodb.js"></script> -->
+
+<head>
+	<title>Delete Course</title>
+<style>
+
+#container {
+	width: 300px;
+	height: 215px;
+	border: 1px solid rgb(37, 233, 30);
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #fff4e6;
+	border-radius: 25px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 18px;
+}
+
+button {
+	border-radius: 5px;
+	display: block;
+	width: 52px;
+	margin: 2px auto 0px auto;
+	display: inline-block;
+	background-color: deepskyblue;
+}
+
+#gback {
+	margin-left: 1px;
+	background-color: rgb(128, 0, 96);
+}
+
+#add {
+	margin-left: 1px;
+	background-color: green;
+}
+</style>
+</head>
+<script>
+function backButton() {
+	window.history.back();
+}
+</script>
+
+<body>
+	<h1>Delete Course</h1>
+	<div id="container">
+		<form action="/delete_course" method="POST">
+			<label>Course ID</label>
+			<br>
+			<input type="text" name="_id" required>
+			<br>
+			<button id="gback" onclick="backButton()">Back</button>
+			<button id="add" type="submit">Delete</button>
+			<button type="reset" value="Reset">Reset</button>
+		</form>
+	</div>
+</body>
+
+</html>
